@@ -1,0 +1,303 @@
+/*#bg{
+	background: url(img/hands.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	color:#fff;
+
+	-webkit-transition: background 500ms ease-in 500ms; /* property duration timing-function delay
+	-moz-transition: background 500ms ease-in 500ms;
+	-o-transition: background 500ms ease-in 500ms;
+	transition: background 500ms ease-in 500ms;
+}*/
+
+#bg2 {
+/*	background: url(../img/hands.jpg) no-repeat center center fixed;
+*/	z-index:-9999px;
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	-webkit-transition: background 500ms ease-in 500ms; /* property duration timing-function delay */
+	-moz-transition: background 500ms ease-in 500ms;
+	-o-transition: background 500ms ease-in 500ms;
+	transition: background 500ms ease-in 500ms;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+	#bg2 {
+		left: 50%;
+		margin-left: -512px;   /* 50% */
+	}
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/bebasneue-webfont.eot');
+    src: url('../fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue-webfont.woff') format('woff'),
+         url('../fonts/bebasneue-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:inherit;
+}
+
+
+  body.orgs,  body.locs{
+	color:#fff;
+	list-style:none;
+	background-repeat:no-repeat;
+	background-image:url(../img/feet.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+
+	min-height: 100%;
+	min-width: 1024px;
+
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+  }
+
+
+body.home{
+	color:#fff;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+
+	min-height: 100%;
+	min-width: 1024px;
+
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+
+  }
+
+#container{
+	/*margin-left:0px auto;
+	margin-right:0px auto;*/
+	height:auto;
+	width:900px;
+}
+
+
+#scrollable{
+	width:400px;
+	height:300px;
+	padding:5px;
+	overflow:auto;
+	float:left;
+}
+
+div.scrollBar {
+	padding-top:20px;
+}
+
+#map{
+	padding:0px 30px 5px 0px;
+	float:left;
+}
+
+#goldBlock{
+	background-image:url(../img/GoldBlock.png);
+	left:0px;
+	right:0px;
+	display:block;
+	height:auto;
+	min-height:450px;
+	/*padding:10px;*/
+	position:fixed;
+	bottom:0px;
+	top:200px;
+}
+
+#list{
+	padding:20px 0px 0px 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+	line-height:18px;
+	width:1000px;
+	display:block;
+	margin:auto;
+	min-width:960px;
+}
+
+ p.p1{
+	 letter-spacing:0.5px;
+	 word-spacing:-1px;
+ }
+
+ p.p2{
+	 letter-spacing:0.8px;
+	 word-spacing:1px;
+	 }
+
+ /*Organizations list*/
+ #left {
+	 float:left;
+	 padding:20px 60px 20px 20px;
+	 border-right:2px #fff solid;
+ }
+
+ #right{
+	float:left;
+	padding:10px 0px 20px 50px;
+ }
+
+
+/*For the links in the right side box*/
+a { color: #fff; text-decoration:none; }
+a:visited { color: #fff; }
+a:hover { color: #555; }
+
+h1 {
+   font-size:36px;
+   font-family: 'BebasNeueRegular';
+   font-weight:normal;
+   margin:0px;
+   padding:20px 20px 5px 180px;
+   }
+
+nav ul, nav ol { list-style: none; margin: 0; padding: 0; }
+
+/* ==============
+  		NAV
+   ============== */
+
+nav {
+	/*display:inline-block;
+	position:relative;*/
+	width: 350px;
+	padding-right: 20%;
+	font-family: 'BebasNeueRegular';
+	float:right;
+
+	}
+
+nav a{
+	display:block;
+	padding:15px 10px 0px 0px;
+	/*text-shadow: #111 1px 1px 2px;*/
+	text-align:center;
+	text-decoration:none;
+	font-size:24px;
+	float:left;
+	width:152px;
+	height:54px;
+	background-repeat:no-repeat;
+	background-image:url(../img/ticket.png);
+}
+
+nav a:hover{
+	text-decoration:underline;
+	color:#fff;
+}
+
+ #title a:hover{
+	text-decoration:underline;
+	color:#fff;
+}
+
+/* CAMPUS FAITH logo */
+#titles {
+	display:block;
+/*	text-align:left; */
+	width:93%;
+	float:left;
+	margin:0px;
+	height:180px;
+	z-index:+9999;
+	}
+
+#title a{
+   display:block;
+   float:left;
+   padding-right: 8px;
+   margin: 0px;
+   border-right: 3px solid white;
+   height:44px;
+   font-size:42px;
+   font-family: 'BebasNeueRegular';
+   text-decoration:none;
+	}
+
+#subtitle {
+	font-size:22px;
+	float:left;
+	line-height:18px;
+	font-family: 'BebasNeueRegular';
+	width:220px;
+	margin-top:5px;
+	padding-left:9px;
+	color:#FFF;
+	}
+
+/* SIDEBAR on homepage*/
+#sidebar {
+	width:20%;
+	float: right;
+	position:fixed;
+	background-image:url(../img/GoldStrip.png);
+	background-size:cover;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	min-width:250px;
+	}
+
+#text{
+	padding:20% 0;
+	margin-left:10%;
+	text-align-last:left;
+	text-align:left;
+	letter-spacing:0.8px;
+	word-spacing:1px;
+	width:250px;
+}
+
+#sidebar p {
+	margin:10%;
+	font-family: Helvetica, Helvetica Neue, Arial;
+	font-size: 14px;
+	color:#fff;
+	font-size-adjust:inherit;
+
+	 }
+
+#sidebar p .emphasize {
+	font-family: 'BebasNeueRegular';
+ 	display: block;
+    }
+
+/* ===== Primary Styles ========================================================
+   Author: Keith Shininger - edited by Jenna Robinson
+   ========================================================================== */

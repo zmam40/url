@@ -1,3 +1,0 @@
-.scrollBar .knobVerticalFill{
-	height:expression(document.getElementById("verticalKnob").offsetHeight-24+"px");
-}
